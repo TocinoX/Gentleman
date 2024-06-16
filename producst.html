@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--Config-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noarchive">
+  <meta name="googlebot" content="noarchive">
+  <!--CSS-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Favicon-->
+  <link rel="icon" type="image/webp" href="img/favicon.webp">
+  <!--Titulo-->
+  <title>Gentleman</title>
+  <body> 
+    <!--Header-->
+    <header class="w-100">
+      <!--Barra de anuncios-->
+      <div class="w-100 p-3 text-center text-tertiary bg-primary announcement_bar">
+        <div class="announcement_bar-track">
+          <p class="text-start text-tertiary announcement_bar-text"></p>
+          <p class="text-start text-tertiary announcement_bar-text">Descuentos por el d&iacute;a del padre</p>
+          <p class="text-start text-tertiary announcement_bar-text">Hacemos env&iacute;os a todo el Perú</p>
+          <p class="text-start text-tertiary announcement_bar-text">Ofertas hasta del 30% de descuento</p>
+        </div>
+      </div>
+      <!--Barra de navegación-->
+      <nav class="flex justify-content-between align-items-center w-100 bg-tertiary">
+        <!--Botón hamburguesa-->
+        <div class="invisible-lg w-25 nav-options">
+          <button class="btn nav-open_menu"><i class="fa-solid fa-bars fa-xl"></i></button>
+        </div>
+        <!--Logo-->
+        <div class="w-50 text-center w-lg-auto text-lg-start logo"><img class="ps-lg-3" src="img/logo_negro.webp" alt="Logo"></div>
+        <!--Lista de navegación-->
+        <ul class="invisible justify-content-start visible-lg flex w-lg-100 ps-7 nav-list"> 
+          <li class="mx-7 nav-item"><a class="hover-primary upper text-bold" href="index.html">Inicio </a></li>
+          <li class="mx-7 nav-item"><a class="hover-primary upper text-bold" href="aboutUs.html">Nosotros  </a></li>
+          <li class="mx-7 nav-item"><a class="hover-primary upper text-bold active" href="products.html">Productos</a>
+            <!--Sub-lista de navegación-->
+            <ul class="p-7 bg-tertiary nav-sub_list">
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Polos </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Camisas </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Chompas </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Poleras </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Casacas</a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Pantalones </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Calzado </a></li>
+            </ul>
+          </li>
+          <li class="mx-7 nav-item"><a class="hover-primary upper text-bold" href="contact.html">Cont&aacute;cto</a>
+            <!--Sub-lista de navegación-->
+            <ul class="p-7 bg-tertiary nav-sub_list">
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#">Formulario</a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#"> <i class="fa-brands fa-whatsapp"> </i> WhatsApp </a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#"><i class="fa-brands fa-facebook-messenger"></i> Messenger</a></li>
+              <li class="py-1 nav-sub_item"> <a class="w-fit hover-primary" href="#"><i class="fa-regular fa-envelope"></i> Correo</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--Opciones de navegación-->
+        <div class="flex justify-content-end align-items-center w-25 w-lg-auto nav-options">
+          <!--Botón de barra de búsqueda-->
+          <button class="scale btn nav-search"><i class="fa-solid fa-search fa-xl"></i></button>
+          <!--Botón de usuario--><a class="invisible visible-md btn scale nav-user" href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+          <!--Botón de carrito de compras--><a class="invisible visible-sm btn scale nav-car" href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!--Main-->
+    <main> 
+      <!--Slider-->
+      <div class="w-100 slider">
+        <!--Marco del slider-->
+        <div class="w-100 slider-frame">
+          <!--Botón de siguiente slide-->
+          <div class="flex align-items-center w-fit h-100 slider-next">
+            <button class="btn btn-primary"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
+          </div>
+          <!--Botón de slide anterior -->
+          <div class="flex align-items-center w-fit h-100 slider-prev">
+            <button class="btn btn-primary"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
+          </div>
+          <!--Pista del slider-->
+          <div class="flex w-100 h-100 slider-track">
+            <!--Slide-->
+            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_1@mobile.webp" alt="slider 1"><img class="visible-md w-100 h-100" src="img/slider_1@desktop.webp" alt="slider 1"></a></div>
+            <!--Slide-->
+            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_2@mobile.webp" alt="slider 2"><img class="visible-md w-100 h-100" src="img/slider_2@desktop.webp" alt="slider 2"></a></div>
+            <!--Slide-->
+            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_3@mobile.webp" alt="slider 3"><img class="visible-md w-100 h-100" src="img/slider_3@desktop.webp" alt="slider 3"></a></div>
+          </div>
+        </div>
+        <!--Indicadores del slider actual-->
+        <div class="flex justify-content-center w-100 pt-1 pb-7 slider-indicators"> 
+          <button class="bg-primary"></button>
+          <button class="mx-1"></button>
+          <button></button>
+        </div>
+      </div>
+      <!--Categorías-->
+      <section class="categories"> 
+        <!--Titulo de Categorías-->
+        <h1 class="pb-7 text-center">Categor&iacute;as</h1>
+        <!--Marco de Categorías-->
+        <div class="categories-frame"> 
+          <!--Pista de Categorías-->
+          <div class="flex justify-content-lg-center categories-track"> <a class="mx-2 text-center scale-sm category" href="#"> <img src="img/polo.webp" alt="Polo">
+              <h5>Polos</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/camisa.webp" alt="Camisa">
+              <h5>Camisas</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/polera.webp" alt="Polera">
+              <h5>Poleras</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/chompa.webp" alt="Chompa">
+              <h5>Chompas</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/casaca.webp" alt="Casaca">
+              <h5>Casacas</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/pantalon.webp" alt="Pantalón">
+              <h5>Pantalones</h5></a><a class="mx-2 text-center scale-sm category" href="#"> <img src="img/calzado.webp" alt="Calzado">
+              <h5>Calzado</h5></a></div>
+        </div>
+      </section>
+      <!--Destacados-->
+      <section class="featured">   
+        <h1 class="pb-7 text-center">Destacados</h1>
+        <div class="products">
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto1.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Casaca PC-5900CS</h4>
+              <h5 class="py-1">Pierre Cardin</h5>
+              <p>S/. 304.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto2.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Jeans 512 Slim Taper</h4>
+              <h5 class="py-1">Levi's</h5>
+              <p>S/. 249.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto3.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Buzo Deportivo HZ2220</h4>
+              <h5 class="py-1">Adidas</h5>
+              <p>S/. 259.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto4.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Jean Forland New Frost</h4>
+              <h5 class="py-1">Pionier</h5>
+              <p>S/. 159.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto5.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Chompa CAR-5904CHH</h4>
+              <h5 class="py-1">Pierre Cardin</h5>
+              <p>S/. 99.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto6.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Zapatos Casuales P111408</h4>
+              <h5 class="py-1">CAT</h5>
+              <p>S/. 269.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto7.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Polo Negro</h4>
+              <h5 class="py-1">Kenneth Cole</h5>
+              <p>S/. 99.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product"> <a href="#"><img class="w-100" src="img/producto8.webp" alt=""></a>
+            <div class="p-2 product-content">
+              <h4>Camisa MC PC-58641CA</h4>
+              <h5 class="py-1">Pierre Cardin</h5>
+              <p>S/. 124.00</p>
+              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex align-items-center pt-7 view-more"> 
+          <div class="w-100 line"> </div>
+          <button class="w-100 mx-3 mx-sm-5 btn btn-primary">Ver más productos</button>
+          <div class="w-100 line"> </div>
+        </div>
+      </section>
+      <!--Marcas-->
+      <section class="flex wrap justify-content-center align-items-center brands"> 
+        <h1 class="w-100 pb-7 text-center">Marcas</h1>
+        <div class="brand"><img class="w-100" src="img/pierre_cardin.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/pionier.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/levis.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/cat.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/puma.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/adidas.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/jack_and_jones.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/kenneth_cole.webp" alt=""></div>
+        <div class="brand"><img class="w-100" src="img/nautica.webp" alt=""></div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="bg-primary"> 
+      <!--Información de la tienda-->
+      <section class="flex wrap nowrap-xl bg-secondary shop"> 
+        <!--Envíos-->
+        <div class="w-100 py-7 text-center w-lg-50 px-lg-5 w-xl-25 shop-info"> <i class="pb-2 fa-solid fa-truck-fast fa-4x"></i>
+          <h3>Env&iacute;os a todo el Per&uacute;</h3>
+          <p>Recibe tu pedido en cualquier parte del Per&uacute;.</p>
+        </div>
+        <!--Garantía-->
+        <div class="w-100 py-7 text-center w-lg-50 px-lg-5 w-xl-25 shop-info"> <i class="pb-2 fa-regular fa-face-laugh-wink fa-4x"></i>
+          <h3>Garant&iacute;a</h3>
+          <p>Tu compra cuenta con 10 d&iacute;as de garant&iacute;a.</p>
+        </div>
+        <!--Soporte-->
+        <div class="w-100 py-7 text-center w-lg-50 px-lg-5 w-xl-25 shop-info"> <i class="pb-2 fa-solid fa-headset fa-4x"></i>
+          <h3>Soporte 24/7</h3>
+          <p>¿Necesitas ayuda? Nuestro equipo responder&aacute; tus dudas lo m&aacutes pronto posible</p>
+        </div>
+        <!--Pago-->
+        <div class="w-100 py-7 text-center w-lg-50 px-lg-5 w-xl-25 shop-info"> <i class="pb-2 fa-solid fa-shield-halved fa-4x"></i>
+          <h3>Pago Seguro</h3>
+          <p>Utilizamos seguridad SSL encriptada para garantizar que la informaci&oacute;n de su tarjeta de cr&eacute;dito/d&eacute;bito est&eacute; 100% protegida.</p>
+        </div>
+      </section>
+      <!--Pie de página-->
+      <section class="flex wrap nowrap-xl footer-container">
+        <!--Descripción-->
+        <div class="w-100 py-7 text-center w-lg-50 px-lg-5 text-xl-start footer-block"> 
+          <h2 class="pb-2 text-tertiary">G E N T L E M A N </h2>
+          <p class="text-justify-center text-tertiary text-justify-xl-start footer-text">¡Descubre el estilo definitivo para hombres en nuestra tienda online de moda masculina! Somos tu destino confiable para encontrar prendas de calidad que reflejen tu personalidad &uacute;nica. Con un servicio respetuoso y  atenci&oacute;n al cliente excepcional, estamos aqu&iacute; para ayudarte a encontrar el estilo perfecto para cada ocasi&oacute;n. ¡Explora nuestra selecci&oacute;n ahora y eleva tu estilo con nosotros!      </p>
+          <!--Redes Sociales-->
+          <ul class="flex justify-content-center w-100 pt-2 justify-content-xl-start social_media-list">
+            <li class="social_media-item"><a class="pe-2 scale" href="#"><i class="text-tertiary fa-brands fa-square-facebook fa-xl"> </i></a></li>
+            <li class="social_media-item"><a class="pe-2 scale" href="#"><i class="text-tertiary fa-brands fa-square-instagram fa-xl"> </i></a></li>
+            <li class="social_media-item"><a class="pe-2 scale" href="#"><i class="text-tertiary fa-brands fa-square-x-twitter fa-xl"> </i></a></li>
+            <li class="social_media-item"><a class="pe-2 scale" href="#"><i class="text-tertiary fa-brands fa-square-whatsapp fa-xl"> </i></a></li>
+          </ul>
+        </div>
+        <!--Ayuda-->
+        <div class="flex col align-items-center w-100 w-lg-50 px-lg-5 w-xl-25 py-7 footer-block"> 
+          <ul class="text-center text-xl-start footer-list">
+            <h2 class="pb-2 text-tertiary">Ayuda</h2>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Preguntas frecuentes </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Gu&iacute;a de compras </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Tiempos y costos de env&iacute;os </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Formas de pago </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Cambios y devoluciones </a></li>
+          </ul>
+        </div>
+        <!--Información                -->
+        <div class="flex col align-items-center w-100 w-lg-50 px-lg-5 w-xl-25 py-7 footer-block"> 
+          <ul class="text-center text-xl-start footer-list">
+            <h2 class="pb-2 text-tertiary">Informaci&oacute;n </h2>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">T&eacute;rminos y condiciones </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Pol&iacute;ticas de privacidad </a></li>
+            <li class="pb-1 footer-item"><a class="text-tertiary w-lg-fit hover-tertiary" href="#">Libro de Reclamaciones </a></li>
+          </ul>
+        </div>
+        <!--Contacto     -->
+        <div class="flex col align-items-center w-100 w-lg-50 px-lg-5 w-xl-25 py-7 footer-block"> 
+          <ul class="text-center text-xl-start footer-list">
+            <h2 class="pb-2 text-tertiary">Cont&aacute;ctanos </h2>
+            <li class="text-tertiary pb-1 footer-item"> <i class="text-tertiary fa-solid fa-phone"></i> +51 919 818 717</li>
+            <li class="text-tertiary pb-1 footer-item"> <i class="text-tertiary fa-solid fa-envelope"></i> info@gentleman.com</li>
+            <li class="text-tertiary pb-1 footer-item"><i class="text-tertiary fa-solid fa-clock"></i> 9:00 a.m. a 6:00 p.m. de Lunes a Viernes</li>
+          </ul>
+        </div>
+      </section>
+      <!--Barra del footer-->
+      <div class="flex col justify-content-between align-content-center w-100 pb-5 px-7 row-md footer-aside"> 
+        <!--Copyright-->
+        <h5 class="text-center pt-md-7 text-md-start text-tertiary">Copyright <i class="text-tertiary fa-regular fa-copyright"> </i> 2024 - Gentleman</h5>
+        <!--Métodos de Pago-->
+        <div class="flex justify-content-center pt-2 pt-md-0 footer-pay_methods"> 
+          <div class="flex align-content-center ms-2 p-1 bg-tertiary footer-pay_method"> <img src="img/paypal.webp" alt=""></div>
+          <div class="flex align-content-center ms-2 p-1 bg-tertiary footer-pay_method"><img src="img/plin.webp" alt=""></div>
+          <div class="flex align-content-center ms-2 p-1 bg-tertiary footer-pay_method"><img src="img/yape.webp" alt=""></div>
+          <div class="flex align-content-center ms-2 p-1 bg-tertiary footer-pay_method"><img src="img/visa.webp" alt=""></div>
+          <div class="flex align-content-center ms-2 p-1 bg-tertiary footer-pay_method"><img src="img/mastercard.webp" alt=""></div>
+        </div>
+      </div>
+    </footer>
+    <!--Menu desplegable-->
+    <div class="w-75 p-5 bg-primary menu">
+      <!--Botón para cerrar-->
+      <button class="btn menu-close_menu"><i class="text-tertiary fa-solid fa-x fa-md"></i></button>
+      <!--Lista de navegación-->
+      <ul class="p-1 menu-list">
+        <li class="py-5 menu-item"><a class="upper text-bold text-tertiary" href="#">Inicio </a></li>
+        <li class="py-5 menu-item"><a class="upper text-bold text-tertiary" href="#">Nosotros </a></li>
+        <li class="flex justify-content-between align-items-start py-5 menu-item"><a class="upper text-bold text-tertiary" href="#">Productos</a>
+          <button class="menu-open_sub_list"><i class="text-tertiary fa-solid fa-plus fa-md"></i></button>
+          <!--Sub-lista de navegación-->
+          <ul class="py-7 px-4 menu-sub_list">
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Polos </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Camisas </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Chompas </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Poleras </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Casacas</a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Pantalones </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Calzado     </a></li>
+          </ul>
+        </li>
+        <li class="flex justify-content-between align-items-start py-5 menu-item"><a class="upper text-bold text-tertiary" href="#">Cont&aacute;cto</a>
+          <button class="menu-open_sub_list"><i class="text-tertiary fa-solid fa-plus fa-md"></i></button>
+          <!--Sub-lista de navegación-->
+          <ul class="py-7 px-4 menu-sub_list">
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#">Formulario</a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#"> <i class="text-tertiary fa-brands fa-whatsapp"> </i> WhatsApp </a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#"><i class="text-tertiary fa-brands fa-facebook-messenger"></i> Messenger</a></li>
+            <li class="py-1 menu-sub_item"> <a class="text-tertiary" href="#"><i class="text-tertiary fa-regular fa-envelope"></i> Correo</a></li>
+          </ul>
+        </li>
+        <!--Botón de usuario-->
+        <li class="invisible-md pt-5 menu-item menu-item--user"> <a class="upper text-bold" href="#"><small class="text-secondary"> <i class="text-secondary fa-solid fa-user">  </i> Cuenta</small></a></li>
+        <!--Botón de carrito-->
+        <li class="invisible-sm pt-5 menu-item menu-item--car"><a class="upper text-bold" href="#"><small class="text-secondary"> <i class="text-secondary fa-solid fa-bag-shopping"> </i> Carrito</small></a></li>
+      </ul>
+    </div>
+    <!--Barra de búsqueda-->
+    <div class="flex align-items-center w-100 px-8 bg-secondary search"> 
+      <!--Botón para buscar-->
+      <button class="btn"><i class="fa-solid fa-search fa-md"></i></button>
+      <!--Entrada de texto-->
+      <input class="w-100 py-5 py-md-7" type="text" placeholder="Buscar productos...">
+      <!--Botón para cerrar-->
+      <button class="btn search-close"><i class="fa-solid fa-x fa-md"></i></button>
+    </div>
+    <!--Bloquear y cerrar-->
+    <div class="close"></div>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1822c1a120.js"> </script>
+    <!--Jquery-->
+    <!--script(src="https://code.jquery.com/jquery-3.7.1.min.js") -->
+    <!--Menu-->
+    <script src="js/menu.js"> </script>
+    <!--Search Bar-->
+    <script src="js/search.js"> </script>
+    <!--Slider-->
+    <script src="js/slider.js"> </script>
+  </body>
+</html>
