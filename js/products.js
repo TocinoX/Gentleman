@@ -5,6 +5,7 @@ const checkboxesCategories = document.querySelectorAll('.checkbox-category');
 const checkboxesBrands = document.querySelectorAll('.checkbox-brand');
 const inputMin = document.querySelector('.input-min');
 const inputMax = document.querySelector('.input-max');
+const productsTittle = document.querySelector('.products-tittle');
 
 let getJSON = function (url, callback) {
     let xhr = new XMLHttpRequest();
@@ -115,50 +116,7 @@ getJSON('./js/json/products.json', function (err, products) {
         console.log('Something went wrong: ' + err)
     } else {
         productsLayout(products);
+        filterProducts(products);
 
-        btnApplyFilters.addEventListener('click', () => {
-            let filterProducts = [];
-            let filterCategories = [];
-            let filterBrands = [];
-            let minPrice = inputMin.value;
-            let maxPrice = inputMax.value;
-            let nothingCheckbox = true;
-
-            checkboxesCategories.forEach(checkboxCategory => {
-                if(checkboxCategory.checked) {
-                    filterCategories.push(checkboxCategory.id);
-                    nothingCheckbox = false;
-                }
-
-            })
-
-            checkboxesBrands.forEach((checkboxBrand) => {
-                if(checkboxBrand.checked) {
-                    filterBrands.push(checkboxBrand.nextSibling.nextSibling.innerHTML);
-                    nothingCheckbox = false;
-                }
-            })
-
-            filterProducts = products.filter(product => {
-                let isFilterCategory = false;
-                if(filterCategories.length == 0) isFilterCategory = true;
-
-                filterCategories.forEach(filterCategory => {if(product.category == filterCategory) isFilterCategory = true});
-                
-                let isFilterBrand = false;
-                if(filterBrands.length == 0) isFilterBrand = true;
-
-                filterBrands.forEach(filterBrand => {if(product.brand == filterBrand) isFilterBrand = true});
-
-                return isFilterCategory && isFilterBrand;
-            })
-
-            if(nothingCheckbox) filterProducts = products;
-
-            if(minPrice != '' && minPrice != ' ') filterProducts = filterProducts.filter(product => product.price >= parseInt(minPrice));
-            if(maxPrice != '' && minPrice != ' ') filterProducts = filterProducts.filter(product => product.price <= parseInt(maxPrice));
-
-            productsLayout(filterProducts);
-        });
     }
 });
