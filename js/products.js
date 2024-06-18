@@ -118,5 +118,13 @@ getJSON('./js/json/products.json', function (err, products) {
         productsLayout(products);
         filterProducts(products);
 
+        if(sessionStorage.getItem('menuFilter')) {
+            console.log(sessionStorage.getItem('menuFilter'));
+            console.log(products[7].category);
+            console.log(products[7].category == sessionStorage.getItem('menuFilter'));
+            productsLayout(products.filter(product => product.category == sessionStorage.getItem('menuFilter')));
+            productsTittle.innerHTML = sessionStorage.getItem('menuFilter');
+            sessionStorage.clear();
+        }
     }
 });
