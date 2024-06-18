@@ -1,0 +1,242 @@
+[    
+    {
+        "id": 0,
+        "name": "Casaca Parka",
+        "brand": "Nautica",
+        "category": "casacas",
+        "price": 469.00,
+        "size": ["XL", "XXL"]
+    },
+    {
+        "id": 1,
+        "name": "Casaca PC-5900CS",
+        "brand": "Pierre Cardin",
+        "category": "casacas",
+        "price": 304.00,
+        "size": ["S", "L"]
+    },
+    {
+        "id": 2,
+        "name": "Jeans 512 Slim Taper",
+        "brand": "Levi's",
+        "category": "pantalones",
+        "price": 249.00,
+        "size": ["M", "XL"]
+    },
+    {
+        "id": 3,
+        "name": "Buzo Deportivo HZ2220",
+        "brand": "Adidas",
+        "category": " ",
+        "price": 259.00,
+        "size": ["S", "M"]
+    },
+    {
+        "id": 4,
+        "name": "Jean Forland New Frost",
+        "brand": "Pionier",
+        "category": "pantalones",
+        "price": 159.00,
+        "size": ["L", "XXL"]
+    },
+    {
+        "id": 5,
+        "name": "Chompa CAR-5904CHH",
+        "brand": "Pierre Cardin",
+        "category": "chompas",
+        "price": 99.00,
+        "size": ["M", "XXL"]
+    },
+    {
+        "id": 6,
+        "name": "Zapatos Casuales P111408",
+        "brand": "CAT",
+        "category": "calzado",
+        "price": 269.00,
+        "size": ["42", "44"]
+    },
+    {
+        "id": 7,
+        "name": "Polo Negro",
+        "brand": "Kenneth Cole",
+        "category": "polos",
+        "price": 99.00,
+        "size": ["S", "M"]
+    },
+    {
+        "id": 8,
+        "name": "Camisa MC PC-58641CA",
+        "brand": "Pierre Cardin",
+        "category": "camisas",
+        "price": 124.00,
+        "size": ["M", "XXL"]
+    },
+    {
+        "id": 9,
+        "name": "Casaca Hero",
+        "brand": "Jack & Jones",
+        "category": "casacas",
+        "price": 233.00,
+        "size": ["M", "L"]
+    },
+    {
+        "id": 10,
+        "name": "Zapatillas Urbanas If4032 Courtblock",
+        "brand": "Adidas",
+        "category": "calzado",
+        "price": 191.00,
+        "size": ["41", "43"]
+    },
+    {
+        "id": 11,
+        "name": "Chompa CAR-5903CHH",
+        "brand": "Pierre Cardin",
+        "category": "chompas",
+        "price": 194.00,
+        "size": ["S", "M"]
+    },
+    {
+        "id": 12,
+        "name": "Zapatillas Deportivas 373018 01",
+        "brand": "Puma",
+        "category": "calzado",
+        "price": 199.00,
+        "size": ["41", "42"]
+    },
+    {
+        "id": 13,
+        "name": "Chaqueta Foundation Fz Polar-Pitch",
+        "brand": "CAT",
+        "category": "casacas",
+        "price": 239.00,
+        "size": ["L", "XXL"]
+    },
+    {
+        "id": 14,
+        "name": "Pionier Twill Beckham",
+        "brand": "Pionier",
+        "category": "pantalones",
+        "price": 159.00,
+        "size": ["S", "L"]
+    },
+    {
+        "id": 15,
+        "name": "Polo 12234746 Star OI24",
+        "brand": "Jack & Jones",
+        "category": "polos",
+        "price": 63.00,
+        "size": ["", ""]
+    },
+    {
+        "id": 16,
+        "name": "Polera Monel Franela",
+        "brand": "Pionier",
+        "category": "poleras",
+        "price": 219.00,
+        "size": ["S", "M"]
+    },
+    {
+        "id": 17,
+        "name": "Camisa MC ETQ Linen COL PC-59418CAA",
+        "brand": "Pierre Cardin",
+        "category": "camisas",
+        "price": 161.00,
+        "size": ["L", "XL"]
+    },
+    {
+        "id": 18,
+        "name": "Jeans 505 Regular",
+        "brand": "Levi's",
+        "category": "pantalones",
+        "price": 249.00,
+        "size": ["L", "XL"]
+    },
+    {
+        "id": 19,
+        "name": "Polerón Hood",
+        "brand": "Jack & Jones",
+        "category": "poleras",
+        "price": 143.00,
+        "size": ["L", "XXL"]
+    },
+    {
+        "id": 20,
+        "name": "Polo Classic Fit Sleeve City",
+        "brand": "Nautica",
+        "category": "polos",
+        "price": 189.00,
+        "size": ["S", "XL"]
+    },
+    {
+        "id": 21,
+        "name": "Camisa Yefri Ml Denim",
+        "brand": "Pionier",
+        "category": "camisas",
+        "price": 169.00,
+        "size": ["L", "XXL"]
+    },
+    {
+        "id": 22,
+        "name": "Zapatillas Urbanas Quest Mid",
+        "brand": "CAT",
+        "category": "calzado",
+        "price": 399.00,
+        "size": ["44", "41"]
+    },
+    {
+        "id": 23,
+        "name": "Casaca Military",
+        "brand": "Levi's",
+        "category": "casacas",
+        "price": 209.00,
+        "size": ["M", "XL"]
+    },
+    {
+        "id": 24,
+        "name": "Polera Franela Blai Abierta",
+        "brand": "Pionier",
+        "category": "poleras",
+        "price": 219.00,
+        "size": ["L", "XL"]
+    },
+    {
+        "id": 25,
+        "name": "Zapatillas Hp2512",
+        "brand": "Adidas",
+        "category": "calzado",
+        "price": 139.00,
+        "size": ["XL", "XXL"]
+    },
+    {
+        "id": 26,
+        "name": "Polera Deportiva 586686 01 Ess Big",
+        "brand": "Puma",
+        "category": "poleras",
+        "price": 179.00,
+        "size": ["S", "XXL"]
+    },
+    {
+        "id": 27,
+        "name": "Traje de Vestir",
+        "brand": "Kenneth Cole",
+        "category": "",
+        "price": 707.00,
+        "size": ["S", "L"]
+    },
+    {
+        "id": 28,
+        "name": "Polo ML RIB Cuello Alto SB PC-59100PO",
+        "brand": "Pierre Cardin",
+        "category": "polos",
+        "price": 181.00,
+        "size": ["S", "M"]
+    },
+    {
+        "id": 29,
+        "name": "Polo Deportivo Ic9276 M Lin Sj T",
+        "brand": "Kenneth Cole",
+        "category": "polos",
+        "price": 69.00,
+        "size": ["S", "XXL"]
+    }
+]
