@@ -6,6 +6,9 @@ const checkboxesBrands = document.querySelectorAll('.checkbox-brand');
 const inputMin = document.querySelector('.input-min');
 const inputMax = document.querySelector('.input-max');
 const productsTittle = document.querySelector('.products-tittle');
+const btnPrevPagination = document.querySelector('.btn-prev_pagination');
+const btnNextPagination = document.querySelector('.btn-next_pagination');
+let currentPagination = 0;
 
 let getJSON = function (url, callback) {
     let xhr = new XMLHttpRequest();
@@ -97,6 +100,8 @@ function paintProducts(products, page) {
     pageProducts.forEach(product => {
         layoutProduct.appendChild(createCardProduct(product.id, product.name, product.brand, product.price));
     });
+
+    if(products.length == 0) productsTittle.innerHTML = 'No se encontraron resultados de: ' + productsTittle.innerHTML;
 }
 
 function productsLayout(products) {
@@ -104,9 +109,10 @@ function productsLayout(products) {
 
     const btnsPagination = document.querySelectorAll('.btn-pagination');
     
-    btnsPagination.forEach((btnPagination, index) => btnPagination.addEventListener('click', () => {
-        paintProducts(products, index);
-    }));
+    btnsPagination.forEach((btnPagination, index) => btnPagination.addEventListener('click', () => paintProducts(products, index)));
+
+    btnNextPagination.addEventListener('click', () => paintProducts(products, ++currentPagination < Math.ceil(products.length / 9) ? currentPagination : --currentPagination));
+    btnPrevPagination.addEventListener('click', () => paintProducts(products, --currentPagination < 0 ? ++currentPagination : currentPagination));
     
     paintProducts(products, 0);
 }
@@ -119,11 +125,24 @@ getJSON('./js/json/products.json', function (err, products) {
         filterProducts(products);
 
         if(sessionStorage.getItem('menuFilter')) {
-            console.log(sessionStorage.getItem('menuFilter'));
-            console.log(products[7].category);
-            console.log(products[7].category == sessionStorage.getItem('menuFilter'));
-            productsLayout(products.filter(product => product.category == sessionStorage.getItem('menuFilter')));
             productsTittle.innerHTML = sessionStorage.getItem('menuFilter');
+            productsLayout(products.filter(product => product.category == sessionStorage.getItem('menuFilter')));
+            sessionStorage.clear();
+        }
+
+        if(sessionStorage.getItem('searchFilter')) {
+            productsTittle.innerHTML = sessionStorage.getItem('searchFilter');
+            productsLayout(products.filter(product => {
+                let productName = product.name.toUpperCase();
+                let productBrand = product.brand.toUpperCase();
+                let productCategory = product.category.toUpperCase();
+                let search = sessionStorage.getItem('searchFilter').toUpperCase();
+                let matchName = productName.includes(search);
+                let matchBrand = productBrand.includes(search);
+                let matchCategory = productCategory.includes(search);
+
+                return matchName || matchBrand || matchCategory;
+            }));
             sessionStorage.clear();
         }
     }
