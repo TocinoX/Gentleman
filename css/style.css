@@ -3673,6 +3673,46 @@ nav img {
   text-overflow: ellipsis;
 }
 
+.view_product-star {
+  color: #E5BE01;
+}
+
+.view_product-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #F50B0B;
+}
+
+.view_product-color:nth-child(2) {
+  background-color: #2F7D32;
+}
+
+.view_product-color:nth-child(3) {
+  background-color: #174ABD;
+}
+
+.view_product-size--active, .view_product-color--active {
+  border: solid 2px #1C1C1C;
+}
+
+.view_product-color:hover, .view_product-size:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.view_product-img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 0px 4px 0px #D9D9D9;
+          box-shadow: 0px 0px 4px 0px #D9D9D9;
+}
+
+#amount {
+  width: 50px;
+}
+
 /*CONTACTO*/
 /*Formulario de contacto*/
 .form {

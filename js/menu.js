@@ -51,6 +51,4 @@ btnOpenSubList.forEach((btn, index) => btn.addEventListener('click', () => isMen
 
 const menuFilter = document.querySelectorAll('.menu-filter');
 
-menuFilter.forEach(item => item.addEventListener('click', () => {
-    sessionStorage.setItem('menuFilter', (item.innerHTML).toLowerCase());
-}));
+menuFilter.forEach(item => item.addEventListener('click', () => sessionStorage.setItem('menuFilter', (item.innerHTML).toLowerCase())));

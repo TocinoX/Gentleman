@@ -54,7 +54,9 @@ function createCardProduct(img, name, brand, price) {
     //Imagen
     newImg.setAttribute('src', `img/producto${img}.webp`);
     newImg.classList.add('w-100');
-    newA.setAttribute('href', '#');
+    newA.classList.add('btn-view_product');
+    newA.setAttribute('id', img);
+    newA.setAttribute('href', 'product.html');
     newA.appendChild(newImg);
 
     divContent.classList.add('p-2');
@@ -102,6 +104,9 @@ function paintProducts(products, page) {
     });
 
     if(products.length == 0) productsTittle.innerHTML = 'No se encontraron resultados de: ' + productsTittle.innerHTML;
+    const btnsViewProduct = document.querySelectorAll('.btn-view_product');
+    btnsViewProduct.forEach(btnViewProduct => btnViewProduct.addEventListener('click', () => sessionStorage.setItem('currentProduct', btnViewProduct.id)));
+    console.log(sessionStorage.getItem('currentProduct'));
 }
 
 function productsLayout(products) {

@@ -2,13 +2,19 @@ const btnOpenFilters = document.querySelector('.btn-open_filters');
 const filtersBlock = document.querySelector('.filters');
 const btnsCloseFilters = document.querySelectorAll('.btn-close_filters');
 let currentSliderWidth = window.innerWidth;
-window.addEventListener('resize', () => currentSliderWidth = window.innerWidth);
+let isFiltersBlockOpen = false;
+window.addEventListener('resize', () => {
+    currentSliderWidth = window.innerWidth;
+    if(currentSliderWidth >= 1024 && !isFiltersBlockOpen) filtersBlock.style.visibility = 'visible';
+});
 
 function openFilters() {
     closeBlock.style.visibility = 'visible';
     filtersBlock.style.visibility = 'visible';
 
     document.body.style.overflow = "hidden";
+
+    isFiltersBlockOpen = true;
 }
 
 function closeFilters() {
@@ -17,6 +23,8 @@ function closeFilters() {
         filtersBlock.style.visibility = 'hidden';
     
         document.body.style.overflow = "scroll";
+
+        isFiltersBlockOpen = false;
     }
 }
 
@@ -75,5 +83,6 @@ function filterProducts(products) {
         if(maxPrice != '' && minPrice != ' ') filterProducts = filterProducts.filter(product => product.price <= parseInt(maxPrice));
 
         productsLayout(filterProducts);
+        closeFilters();
     });
 }

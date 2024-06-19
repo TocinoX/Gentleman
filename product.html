@@ -73,168 +73,42 @@
     </header>
     <!--Main-->
     <main> 
-      <!--Slider-->
-      <div class="w-100 slider">
-        <!--Marco del slider-->
-        <div class="w-100 slider-frame">
-          <!--Botón de siguiente slide-->
-          <div class="flex align-items-center w-fit h-100 slider-next">
-            <button class="btn btn-primary"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-          </div>
-          <!--Botón de slide anterior -->
-          <div class="flex align-items-center w-fit h-100 slider-prev">
-            <button class="btn btn-primary"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-          </div>
-          <!--Pista del slider-->
-          <div class="flex w-100 h-100 slider-track">
-            <!--Slide-->
-            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_1@mobile.webp" alt="Tu estilo, tu forma de ser"><img class="visible-md w-100 h-100" src="img/slider_1@desktop.webp" alt="Tu estilo, tu forma de ser"></a></div>
-            <!--Slide-->
-            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_2@mobile.webp" alt="Descubre ofertas exclusivas"><img class="visible-md w-100 h-100" src="img/slider_2@desktop.webp" alt="No te pierdas las ofertas exclusivas"></a></div>
-            <!--Slide-->
-            <div class="w-100 h-100 slide"><a class="w-100 h-100" href="#"><img class="invisible-md w-100 h-100" src="img/slider_3@mobile.webp" alt="Explora lo último en la moda"><img class="visible-md w-100 h-100" src="img/slider_3@desktop.webp" alt="Novedades de la temporada"></a></div>
+      <section class="view_product">
+        <h1 class="text-center view_product-tittle">Producto</h1>
+        <h4 class="pb-7 text-center view_product-brand">Marca</h4>
+        <div class="flex col row-lg">   <img class="w-100 w-lg-50 me-lg-7 view_product-img" src="" alt="">
+          <div class="w-100 product-info">
+            <h3 class="mt-7 mb-1">Calificaci&oacute;n:</h3>
+            <div class="flex align-items-center"> <i class="pe-1 fa-solid fa-star fa-lg view_product-star"></i><i class="pe-1 fa-solid fa-star fa-lg view_product-star"></i><i class="pe-1 fa-solid fa-star fa-lg view_product-star"></i><i class="pe-1 fa-regular fa-star-half-stroke fa-lg view_product-star"></i><i class="pe-1 fa-regular fa-star fa-lg view_product-star"></i>
+              <h4 class="pe-1">(3.5)</h4>
+            </div>
+            <h3 class="mt-7 mb-1">Precio:</h3>
+            <h2 class="view_product-price"> </h2>
+            <h3 class="mt-7 mb-1">Color </h3>
+            <div class="flex"> 
+              <button class="me-1 view_product-color view_product-color--active"></button>
+              <button class="me-1 view_product-color"></button>
+              <button class="me-1 view_product-color"></button>
+            </div>
+            <h3 class="mt-7 mb-1">Talla:</h3>
+            <div class="flex"> 
+              <button class="me-1 p-3 bg-secondary view_product-size view_product-size--active">S</button>
+              <button class="me-1 p-3 bg-secondary view_product-size">M</button>
+              <button class="me-1 p-3 bg-secondary view_product-size">L</button>
+            </div>
+            <h3 class="mt-7 mb-1">Comprar:</h3>
+            <div class="flex"> 
+              <div class="flex">
+                <button class="btn btn-primary view_product-minus">  -</button>
+                <input class="w-100 px-1 bg-secondary" id="amount" type="number" placeholder="Cant.">
+                <button class="btn btn-primary view_product-plus">  +</button>
+              </div>
+              <button class="ms-1 w-auto btn btn-primary">Agregar al carrito</button>
+            </div>
+            <h3 class="mt-7 mb-1">Descripci&oacute;n:</h3>
+            <p class="justify-content-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda molestiae cupiditate sed hic obcaecati vel earum laborum alias, modi voluptatibus, ut quaerat, aliquam deserunt exercitationem iusto illum molestias culpa.</p>
           </div>
         </div>
-        <!--Indicadores del slider actual-->
-        <div class="flex justify-content-center w-100 pt-1 pb-7 slider-indicators"> 
-          <button class="bg-primary"></button>
-          <button class="mx-1"></button>
-          <button></button>
-        </div>
-      </div>
-      <!--Categorías-->
-      <section class="categories"> 
-        <!--Titulo de Categorías-->
-        <h1 class="pb-7 text-center">Categor&iacute;as</h1>
-        <!--Marco de Categorías-->
-        <div class="categories-frame"> 
-          <!--Pista de Categorías-->
-          <div class="flex justify-content-lg-center categories-track"> 
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/polo.webp" alt="Polo">
-              <h5>Polos</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/camisa.webp" alt="Camisa">
-              <h5>Camisas</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/polera.webp" alt="Polera">
-              <h5>Poleras</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/chompa.webp" alt="Chompa">
-              <h5>Chompas</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/casaca.webp" alt="Casaca">
-              <h5>Casacas</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/pantalon.webp" alt="Pantalón">
-              <h5>Pantalones</h5></a>
-            <!--Categoría--><a class="mx-2 text-center scale-sm category home-filter" href="products.html"> <img src="img/calzado.webp" alt="Calzado">
-              <h5>Calzado</h5></a>
-          </div>
-        </div>
-      </section>
-      <!--Destacados-->
-      <section class="featured">  
-        <!--Titulo Destacados-->
-        <h1 class="pb-7 text-center">Destacados</h1>
-        <!--Contenedor de Productos Destacados-->
-        <div class="featured-container">
-          <!--Producto-->
-          <div class="product"> <a class="btn-view_product" id="1" href="product.html"><img class="w-100" src="img/producto1.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Casaca PC-5900CS</h4>
-              <h5 class="py-1">Pierre Cardin</h5>
-              <p>S/. 304.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto-->
-          <div class="product"> <a class="btn-view_product" id="2" href="product.html"><img class="w-100" src="img/producto2.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Jeans 512 Slim Taper</h4>
-              <h5 class="py-1">Levi's</h5>
-              <p>S/. 249.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto-->
-          <div class="product"> <a class="btn-view_product" id="3" href="product.html"><img class="w-100" src="img/producto3.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Buzo Deportivo HZ2220</h4>
-              <h5 class="py-1">Adidas</h5>
-              <p>S/. 259.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto-->
-          <div class="product"> <a class="btn-view_product" id="4" href="product.html"><img class="w-100" src="img/producto4.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Jean Forland New Frost</h4>
-              <h5 class="py-1">Pionier</h5>
-              <p>S/. 159.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto        -->
-          <div class="product"> <a class="btn-view_product" id="5" href="product.html"><img class="w-100" src="img/producto5.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Chompa CAR-5904CHH</h4>
-              <h5 class="py-1">Pierre Cardin</h5>
-              <p>S/. 99.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto        -->
-          <div class="product"> <a class="btn-view_product" id="6" href="product.html"><img class="w-100" src="img/producto6.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Zapatos Casuales P111408</h4>
-              <h5 class="py-1">CAT</h5>
-              <p>S/. 269.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto            -->
-          <div class="product"> <a class="btn-view_product" id="7" href="product.html"><img class="w-100" src="img/producto7.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Polo Negro</h4>
-              <h5 class="py-1">Kenneth Cole</h5>
-              <p>S/. 99.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-          <!--Producto            -->
-          <div class="product"> <a class="btn-view_product" id="8" href="product.html"><img class="w-100" src="img/producto8.webp" alt=""></a>
-            <div class="p-2 product-content">
-              <h4>Camisa MC PC-58641CA</h4>
-              <h5 class="py-1">Pierre Cardin</h5>
-              <p>S/. 124.00</p>
-              <button class="w-100 mt-2 btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <!--Botón para Ver Más Productos-->
-        <div class="flex align-items-center pt-7 view-more"> 
-          <div class="w-100 line"> </div>
-          <button class="w-100 mx-3 mx-sm-5 btn btn-primary">Ver más productos</button>
-          <div class="w-100 line"> </div>
-        </div>
-      </section>
-      <!--Marcas-->
-      <section class="flex wrap justify-content-center align-items-center brands"> 
-        <!--Titulo de Marcas-->
-        <h1 class="w-100 pb-7 text-center">Marcas</h1>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/pierre_cardin.webp" alt="Logo Pierre Cardin"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/pionier.webp" alt="Logo Pionier"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/levis.webp" alt="Logo Levi's"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/cat.webp" alt="Logo CAT"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/puma.webp" alt="Logo Puma"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/adidas.webp" alt="Logo Adidas"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/jack_and_jones.webp" alt="Logo Jack &amp; Jones"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/kenneth_cole.webp" alt="Logo Kenneth Cole"></div>
-        <!--Marca-->
-        <div class="brand"><img class="w-100" src="img/nautica.webp" alt="Logo Nautica"></div>
       </section>
     </main>
     <!--Footer-->
@@ -379,10 +253,8 @@
     <!--Menu-->
     <script src="js/menu.js"> </script>
     <!--Search Bar-->
-    <script src="js/search.js"> </script>
-    <!--Slider-->
-    <script src="js/slider.js"> </script>
-    <!--Featured-->
-    <script src="js/featured.js"> </script>
+    <script src="js/search.js"></script>
+    <!--Product-->
+    <script src="js/product.js"></script>
   </body>
 </html>
